@@ -1,1 +1,1 @@
-document.write('<div id="footer"><p class="isolated">Webpage Copyright &copy; 2015 &ndash; 2016 Elijah Jacob Mears; Last Updated <a href="changelog.html">04/13/16</a></p></div>')
+document.write('<footer id="footer"><p>Webpage Copyright &copy; 2015 &ndash; 2016 Elijah Jacob Mears; Last Updated <a href="changelog.html">07/15/16</a></p></footer>')

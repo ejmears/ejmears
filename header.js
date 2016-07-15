@@ -1,1 +1,0 @@
-document.write('<div id="header"><h1 style="display: inline;">Elijah&rsquo;s Homepage</h1><br/><a href="index.html">Home</a><a href="eightball.html">Eight Ball</a><a href="dice.html">Dice</a><a target=_blank href="http://theodysseyonline.com/author/elijahmears">Odyssey</a><a href="contact.html">Contact</a></div>')
