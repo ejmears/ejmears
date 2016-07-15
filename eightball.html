@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<HTML>
+
+<head>
+
+	<title>Elijah&rsquo;s Page</title>
+
+	<script type="text/javascript" src="eightball.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="mystyles.css"> 
+
+</head>
+
+<body>
+
+<script language="javascript" type="text/javascript" src="header.js"></script>
+
+	<div id="topspace"></div>
+
+	<div id="wrapper" style="text-align: center; ">
+		<h2>Magic Eight-Ball</h2>
+		<img src="8-ball.png" alt="A Magic Eight Ball" />
+		<p class="isolated">Welcome to the Magic 8-Ball.<br/>Ask a question and press the button!</p>
+		<input type="text" id="question" placeholder="Your question" size="35">
+		<input type="button" class="button" onClick="answer(); clearBox(); return false;" value="Get answer!">
+		<br/>
+		<br/>
+		<input type="text" class="answer" id="answer" size="35" disabled/>
+	</div>
+    <div id="bottomspace">
+    </div>
+
+<script language="javascript" type="text/javascript" src="footer.js"></script>
+
+</body>
+
+</HTML>
