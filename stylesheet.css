@@ -10,9 +10,9 @@ body {
 }
 
 .imglink:hover {
-		-moz-box-shadow: 0 0 10px #ccc; 
-		-webkit-box-shadow: 0 0 10px #ccc; 
-		box-shadow: 0 0 10px #ccc;
+		-moz-box-shadow: 0 0 10px #DDBC59; 
+		-webkit-box-shadow: 0 0 10px #DDBC59; 
+		box-shadow: 0 0 10px #DDBC59;
 }
 
 h1, h2, h3 {
