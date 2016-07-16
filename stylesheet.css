@@ -58,6 +58,7 @@ input.button:hover {
 	
 img {
 	display: block;
+	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	-webkit-border-radius: 15px; 
@@ -71,34 +72,27 @@ img {
 	border-radius: 0px;
 }
 
-.para {
-	margin: auto;
-	width: 80%;
-	padding: 10px;
-	text-align: center;
-}
-
-.left {
-	width: 200px; 
-	padding: 5px;
-	height: 200px;
+.box {
 	display: inline-block;
 	vertical-align: top;
-	font-size: .9em;
-}
-
-.right {
+	padding: 10px;
+	height: 200px;
 	width: 200px;
-	padding: 10px;
-	height: 200px;
-	display: inline-block;
-	vertical-align: top;
-	font-size: .9em;
 }
 
-.wrapper {
-	height: 210px;
-	margin: 10px;
+.flex-container {
+  display: flex;
+  position: relative;
+  width: calc(80% + 20px);
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin: auto;
+}
+
+.flex-item {
+	padding: 5px;
+	font-size: .9em;
 }
 	
 .answer {
