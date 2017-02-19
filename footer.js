@@ -1,1 +1,0 @@
-document.write('<footer id="footer"><p>Webpage Copyright &copy; 2015 &ndash; 2016 Elijah Jacob Mears; Last Updated <a href="changelog.html">07/15/16</a></p></footer>')

@@ -1,49 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Elijah Mears</title>
-	<link href="./stylesheet.css" rel="stylesheet" />
-	<link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.elijahjmears.com/contact.html">
-		<script type="text/javascript">
-		<!--
-			if (screen.width <= 699) {
-			document.location = "http://m.elijahjmears.com/contact.html";
-			}
-		//-->
-		</script>
+	<title>Elijah J. Mears</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"> 
 </head>
-
 <body>
-<div id="container">
 
-<script language="javascript" type="text/javascript" src="sidebar.js"></script>
+<div id="wrapper">
 
-<div id="main"><h1>Elijah J. Mears</h1>
-<p style="font-style: italic;">Writer, Composer, Philologist, Poet.</p>
+<ul id="nav">
+	<img src="img/logo.png" class="logo" alt="elijahjmears.com" title="elijahjmears.com"/>
+	<a href="contact.html"><li class="active">CONTACT</li></a>
+	<a href="cv.html"><li>CURRICULUM VITAE</li></a>
+	<a href="portfolio.html"><li>PORTFOLIO</li></a>
+	<a href="index.html"><li>HOME</li></a>
 
-<p style="text-align: left;">I can be contacted and followed on the following services. The best way to contact to me is always to shoot me an email with an informative subject line.</p>
+</ul>
+<div class="box1">
 
-	<div class="flex-container">
+	<h1>CONTACT ME</h1>
+	
+	<div style="font-style: italic;">In addition to using this form, you can also directly send me an <a href="mailto:elijahjmears@gmail.com" target="_blank">email</a>.<br><br></div>
 
-		<div class="flex-item">
-			<div class="box"><a target=_blank href="http://facebook.com/astrognash/"><img src="facebookicon.png" alt="Facebook" title="Facebook"/></a></div>
-			<div class="box"><a target=_blank href="http://twitter.com/ejmears95/"><img src="twittericon.png" alt="Twitter" title="Twitter"/></a></div>
-			<div class="box"><a target=_blank href="http://instagram.com/elijahjmears/"><img src="instagramicon.png" alt="Instagram" title="Instagram"/></a></div>
+	<form name="contact" method="post" action="https://formspree.io/elijahjmears@gmail.com">
+	
+		<fieldset>
 		
-
-			<div class="box"><a target=_blank href="https://www.linkedin.com/in/ejmears95"><img src="linkedinicon.png" alt="LinkedIn" title="LinkedIn"/></a></div>
-			<div class="box"><a target=_blank href="http://ciceronian.tumblr.com/"><img src="tumblricon.png" alt="Tumblr" title="Tumblr"/></a></div>
-			<div class="box"><a href="mailto:elijahjmearsATgmailDOTcom" onclick = "this.href=this.href
-              .replace(/AT/,'&#64;')
-              .replace(/DOT/,'&#46;')"><img src="gmailicon.png" alt="Email" title="Email"/></a></div>
-		</div>
-
-	</div>
+			<legend>1: Information</legend>
+				<label class="nameemail" id="name">
+					<span>Name:<br></span>
+					<input type="text" name="name" maxlength="30" onfocus="if(this.placeholder == 'Your Name') { this.placeholder = ''; }" onblur="if(this.placeholder == '') { this.placeholder = 'Your Name'; }" placeholder="Your Name">
+				</label>
+				<label class="nameemail" id="email">
+					<span>Email:<br></span>
+					<input type="email" name="_replyto" maxlength="30" onfocus="if(this.placeholder == 'email@website.com') { this.placeholder = ''; }" onblur="if(this.placeholder == '') { this.placeholder = 'email@website.com'; }" placeholder="email@website.com">
+				</label>
+				
+				<label class="nameemail" id="subject">
+					<span>Subject:<br></span>
+					<input type="text" name="_subject" maxlength="45" onfocus="if(this.placeholder == 'Subject Goes Here') { this.placeholder = ''; }" onblur="if(this.placeholder == '') { this.placeholder = 'Subject Goes Here'; }" placeholder="Subject Goes Here">
+				</label>
+		
+		</fieldset>
+		<fieldset>
+		
+			<legend>2: Message</legend>
+		
+				<label>
+					<span>Message:<br></span><textarea onfocus="if(this.placeholder == 'Your Message Here') { this.placeholder = ''; }" onblur="if(this.placeholder == '') { this.placeholder = 'Your Message Here'; }" placeholder="Your Message Here"></textarea>
+				</label>
+			
+		</fieldset>
+		<fieldset>
+		
+			<legend>3: Submit Information</legend>
+		
+			<input type="submit" class="button" id="submit" value="Submit"><input type="reset" class="button" id="reset" value="Clear">
+			
+		</fieldset>
+		
+		<input type="hidden" name="_next" value="contact.html" />
+	
+	</form>
 
 </div>
 
-<script language="javascript" type="text/javascript" src="footer.js"></script>
+<div class="box2">
+	<img src="img/ejmears.png" class="centeredimg" id="aboutpic" title="Elijah J. Mears" alt="Elijah J. Mears"/>
+	<p>Fourth year undergraduate at UNCG majoring in Classical Languages &amp; Literature.<p/>
+	<h2>Social Media</h2>
+	<a href="https://www.facebook.com/elijahjmears" target="_blank" class="smedialink"><img src="img/facebookicon.png" style="width: 2em; height: 2em;"/> &emsp; Facebook</a>
+	<a href="https://twitter.com/ejmears95" target="_blank" class="smedialink"><img src="img/twittericon.png" style="width: 2em; height: 2em;"/> &emsp; Twitter</a>
+	<a href="http://ciceronian.tumblr.com/" target="_blank" class="smedialink"><img src="img/tumblricon.png" style="width: 2em; height: 2em;"/> &emsp; Tumblr</a>
+	<a href="https://instagram.com/elijahjmears" target="_blank" class="smedialink"><img src="img/instagramicon.png" style="width: 2em; height: 2em;"/> &emsp; Instagram</a>
+</div>
 
 </div>
+
+<div id="footer">Copyright &copy; 2017 Elijah J. Mears</div>
+
 </body>
 </html>

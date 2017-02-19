@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Elijah Mears</title>
-	<link href="./stylesheet.css" rel="stylesheet" type="text/css" />
-	<link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.elijahjmears.com/index.html">
-	<script type="text/javascript">
-		<!--
-			if (screen.width <= 699) {
-			document.location = "http://m.elijahjmears.com/";
-			}
-		//-->
-		</script>
+	<title>Elijah J. Mears</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"> 
 </head>
 <body>
 
-<div id="container">
+<div id="wrapper">
 
-<script language="javascript" type="text/javascript" src="sidebar.js"></script>
+<ul id="nav">
+	<img src="img/logo.png" class="logo" alt="elijahjmears.com" title="elijahjmears.com"/>
+	<a href="contact.html"><li>CONTACT</li></a>
+	<a href="cv.html"><li>CURRICULUM VITAE</li></a>
+	<a href="portfolio.html"><li>PORTFOLIO</li></a>
+	<a href="index.html"><li class="active">HOME</li></a>
 
-<div id="main"><h1>Elijah J. Mears</h1>
-<p style="font-style: italic;">Writer, Composer, Philologist, Poet.</p>
+</ul>
+<div class="box1">
+<!-- Images must be 1600wx500h or larger at same aspect ratio -->
+<div class="splashholder">
+	<img src="img/oldtown.png" class="splash" title="Old Town Draught House, Greensboro, NC"/>
+	<img src="img/downtowncary.png" class="splash" title="E. Chatham Street, Cary, NC"/>
+	<img src="img/icicles.png" class="splash" title="Academy Street, Cary, NC"/>
+	<div class="caption">&emsp;Photography by Elijah Mears</div>
+</div>
+<p>I am Elijah. I am a writer, a scholar, an amateur photographer, and a lifelong resident of North Carolina. I&rsquo;ve designed and run the websites for both the <a href="http://uncgclassicalsociety.wordpress.com/" target=_blank >UNCG Classical Society</a> and the <a href="http://uncgdemocrats.com" target=_blank >UNCG Democrats</a>, as well as this one. After graduating UNCG, I plan to go on to pursue a graduate degree in Classical Philology.</p>
+<p>Beyond academics, my hobbies include writing, music composition, web design, and photography. I have had poetry published in <span style="font-style: italic;">The Coraddi</span>, UNCG&rsquo;s literary magazine, and I am currently working on several short stories and a novel. My lifelong dream is that someday the words I write will make an impact on the lives of everyday people.</p>
+</div>
 
-	<div class="flex-container">
+<script>
+var myIndex = 0;
+carousel();
 
-		<div class="flex-item">
-			<div class="box">The <strong>UNCG Classical Society</strong> is a student organization dedicated to the promotion and appreciation of the Greco-Roman world. Elijah has been their webmaster and social media coordinator since August of 2015.</div>
-			<div class="box"><a target=_blank href="http://uncgclassicalsociety.wordpress.com/"><img class="imglink" src="societylink.png" alt="Classical Society" title="Classical Society"/></a></div>
-		</div>
-		<div class="flex-item">
-			<div class="box">The <strong>Odyssey</strong> is a social discovery platform dedicated to amplifying millennial voices. Elijah has been a writer with the Wake County branch of Odyssey since April 2016.</div>
-			<div class="box"><a target=_blank href="http://theodysseyonline.com/author/elijahmears"><img class="imglink" src="odysseylink.png" alt="Odyssey" title="Odyssey"/></a></div>
-		</div>
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("splash");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 6000); // Change image every 6 seconds
+}
+</script>
 
-		<div class="flex-item">
-			<div class="box"><a target=_blank href="http://www.thecoraddi.info/post/122861477502/land-of-setting-sun"><img class="imglink" src="coraddilink.png" alt="Coraddi" title="Coraddi"/></a></div>
-			<div class="box">The <strong>Coraddi</strong> is UNCG&rsquo;s literary magazine. The poem <em>Land of Setting Sun</em> appeared in their Fall 2015 issue.</div>
-		</div>
-		<div class="flex-item">
-			<div class="box"><a target=_blank href="https://www.youtube.com/user/astrognash"><img class="imglink" src="youtubelink.png" alt="YouTube" title="YouTube"/></a></div>
-			<div class="box">Elijah has been writing music and putting it on <strong>YouTube</strong> since 2012. He is also a member of Enlightened Productions, a networking group for young composers.</div>
-		</div>
-
-	</div>
+<div class="box2">
+	<img src="img/ejmears.png" class="centeredimg" id="aboutpic" title="Elijah J. Mears" alt="Elijah J. Mears"/>
+	<p>Fourth year undergraduate at UNCG majoring in Classical Languages &amp; Literature.<p/>
+	<h2>Social Media</h2>
+	<a href="https://www.facebook.com/elijahjmears" target="_blank" class="smedialink"><img src="img/facebookicon.png" style="width: 2em; height: 2em;"/> &emsp; Facebook</a>
+	<a href="https://twitter.com/ejmears95" target="_blank" class="smedialink"><img src="img/twittericon.png" style="width: 2em; height: 2em;"/> &emsp; Twitter</a>
+	<a href="http://ciceronian.tumblr.com/" target="_blank" class="smedialink"><img src="img/tumblricon.png" style="width: 2em; height: 2em;"/> &emsp; Tumblr</a>
+	<a href="https://instagram.com/elijahjmears" target="_blank" class="smedialink"><img src="img/instagramicon.png" style="width: 2em; height: 2em;"/> &emsp; Instagram</a>
+</div>
 
 </div>
 
-<script language="javascript" type="text/javascript" src="footer.js"></script>
-
-</div>
+<div id="footer">Copyright &copy; 2017 Elijah J. Mears</div>
 
 </body>
 </html>
