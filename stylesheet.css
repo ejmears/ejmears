@@ -85,6 +85,15 @@ input:focus {
 		box-shadow: 0 0 .1em .05em #e7f4fb;
 }
 
+#question {
+	width: 25em;
+}
+
+#answer {
+	width: 33.3em;
+	color: #000;
+}
+
 textarea:focus {
 		-moz-box-shadow: 0 0 .1em .05em #e7f4fb; 
 		-webkit-box-shadow: 0 0 .1em .05em #e7f4fb; 

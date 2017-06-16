@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Elijah J. Mears</title>
+	<script type="text/javascript" src="eightball.js"></script>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css"> 
 </head>
 <body>
@@ -11,16 +12,21 @@
 <ul id="nav">
 	<img src="img/logo.png" class="logo" alt="elijahjmears.com" title="elijahjmears.com"/>
 	<a href="contact.html"><li>CONTACT</li></a>
-	<a href="eightball.html"><li>EIGHT BALL</li></a>
+	<a href="eightball.html"><li class="active">EIGHT BALL</li></a>
 	<a href="portfolio.html"><li>PORTFOLIO</li></a>
 	<a href="index.html"><li>HOME</li></a>
 
 </ul>
-<div class="box1"><h1>ERROR 404</h1>
+<div class="box1"><h1>MAGIC EIGHT-BALL</h1>
+<p><img src="img/8-ball.png" alt="A Magic Eight Ball" /></p>
+		<p>Welcome to the Magic 8-Ball. Ask a yes or no question and press the button to receive its infinite wisdom.</p>
+		<p><input type="text" id="question" placeholder="Your question">
+		<input type="button" class="button" onClick="answer(); clearBox(); return false;" value="Get Answer" style="width: 8em;">
+		<br/>
+		<br/>
+		<input type="text" class="answer" id="answer" size="50" disabled/></p>
 
-<img class="centeredimg" src="img/logo2.png" id="404pic" />
-
-<p>Sorry about that! The page you're trying to reach doesn't seem to exist.</div>
+</div>
 
 <div class="box2">
 	<img src="img/ejmears.png" class="centeredimg" id="aboutpic" title="Elijah J. Mears" alt="Elijah J. Mears"/>
