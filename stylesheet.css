@@ -92,6 +92,7 @@ input:focus {
 #answer {
 	width: 33.3em;
 	color: #000;
+	background-color: #FFF;
 }
 
 textarea:focus {
