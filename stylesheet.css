@@ -3,17 +3,15 @@
 html {
 	height: 100%;
 	margin: 0 auto;
+	font-size: 1.1vw;
 }
 
 body {
 	background-color: #e7f4fb;
 	width: 100%;
 	height: 100%;
-	min-width: 700px;
-	min-height: 400px;
 	margin: 0 auto;
 	font-family: "Lato", sans-serif;
-	font-size: 1.1vw;
 	letter-spacing: .05rem;
 		}
 		
@@ -155,7 +153,8 @@ textarea {
 #wrapper {
 	background-color: #282828;
 	width: 100%;
-	height: 42rem;
+	height: auto;
+	text-align: center;
 	position: relative;
 	padding: 0 0 0 0;
 	display: inline-block;
@@ -210,16 +209,29 @@ textarea {
 	background-color: #c10000;
 }
 
-.smedialink {
-	display: flex;
-	align-items: center;
+.socialimg {
+	margin-top: 0;
+	margin-left: .5rem;
+	margin-right: .5rem;
+	margin-bottom: 1rem;
+	height: 4rem;
+	border-radius: .5rem;
 }
 
-.smedialink:hover {
-	text-decoration: none;
-	cursor: default;
-	background-color: #c10000;
-	color: #fff;
+.socialimg:hover {
+		-moz-box-shadow: 0 0 .5rem .1rem #e3f4ff; 
+		-webkit-box-shadow: 0 0 .5rem .1rem #e3f4ff; 
+		box-shadow: 0 0 .5rem .1rem #e3f4ff;
+		border-radius: .5rem;
+		cursor: default;
+}
+
+.socialimg:onclick {
+		-moz-box-shadow: 0 0 .5rem .1rem #e3f4ff; 
+		-webkit-box-shadow: 0 0 .5rem .1rem #e3f4ff; 
+		box-shadow: 0 0 .5rem .1rem #e3f4ff;
+		cursor: default;
+		border-radius: .5rem;
 }
 
 .centeredimg {
@@ -265,9 +277,14 @@ textarea {
 	margin-left: 5rem;
 }
 
+.boxtext {
+	width: 60rem;
+	display: inline-block;
+}
+
 .splash {
 	margin: 0 auto;
-	width: 52rem;
+	width: 60rem;
 }
 
 .splashholder .caption {
@@ -275,10 +292,11 @@ textarea {
 	text-align: left;
 	font-style: italic;
 	bottom: 0;
-	width: 52rem;
+	width: 60rem;
 	background: rgba(0, 0, 0, 0.65);
 	padding-top: .25rem;
 	padding-bottom: .25rem;
+	left: 5rem;
 }
 
 .splashholder {
@@ -340,21 +358,19 @@ textarea {
 .imgholder {
 	width: 12rem;
 	margin: .4rem;
-	display: inline;
-	float: left;
+	display: inline-block;
 	position: relative;
 }
 		
 .box1 {
 	background-color: #1c3664;
 	color: #FFF;
-	float: left;
 	padding: 2rem 2rem 2rem 2rem;
-	margin: 2rem 2rem 2rem 2rem;
-	display: inline;
+	margin: 2rem 0 2rem 0;
+	display: inline-block;
 	text-align: center;
-	width: 52rem; 
-	height: 30rem;
+	width: 70rem; 
+	height: auto;
 }
 
 .box2 {
@@ -412,4 +428,94 @@ textarea {
 
 #404pic {
 	height: 5rem;
+}
+
+@media only screen and (max-width: 800px), (orientation: portrait) {
+h1 {
+	font-size: 4rem;
+}
+
+#wrapper {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 0 0 0;
+}
+
+.box1 {
+	width: 100%;
+	font-size: 2rem;
+	height: auto;
+	margin: 2rem 0 2rem 0;
+	padding: 2rem 0 2rem 0;
+}
+
+.splash {
+	width: 80rem;
+}
+
+.splashholder .caption {
+	margin: 0 0 0 -.6rem;
+	width: 80rem;
+}
+		
+#footer {
+		font-size: 2rem;
+		width: 100%;
+}
+
+#nav a {
+	font-size: 2.5rem;
+}
+
+.logo {
+	font-size: 5rem;
+}
+
+.imgholder {
+	width: 45%;
+	margin: 2.5%;
+}
+
+.imgholder .caption {
+		font-size: 2.5rem;
+		}
+.boxtext {
+	width: auto;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+input {
+	font-size: 2rem;
+	height: 4rem;
+	width: 40rem;
+	}
+
+textarea {
+	font-size: 2rem;
+	width: 100%;
+	height: 24rem;
+	}
+	
+#email {
+		margin-left: 0;
+}
+
+#subject {
+		margin-left: 0;
+}
+
+
+.button {
+	height: 4.6rem;
+	width: 12rem;
+	padding: .8rem;
+}
+
+.socialimg {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-bottom: 2rem;
+	height: 7rem;
+}
 }
