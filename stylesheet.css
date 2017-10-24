@@ -168,13 +168,14 @@ textarea {
 	position: relative;
 	margin: 0 auto;
 	padding-bottom: .66rem;
+	padding-top: .66rem;
 }
 
 #nav {
     list-style-type: none;
     padding: 0 0 0 0;
 	margin: 0 0 0 0;
-	font-size: 1.05rem;
+	font-size: 1.5rem;
 	font-family: "Roboto", sans-serif;
 	width: 100%;
 	float: left;
