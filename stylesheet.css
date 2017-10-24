@@ -288,19 +288,20 @@ textarea {
 }
 
 .splashholder .caption {
-	position: absolute;
+	position: relative;
 	text-align: left;
 	font-style: italic;
 	bottom: 0;
 	width: 60rem;
+	display: inline-block;
 	background: rgba(0, 0, 0, 0.65);
 	padding-top: .25rem;
 	padding-bottom: .25rem;
-	left: 5rem;
 }
 
 .splashholder {
 	position: relative;
+	text-align: center;
 }
 
 .imgholder .caption {
@@ -455,7 +456,6 @@ h1 {
 }
 
 .splashholder .caption {
-	margin: 0 0 0 -.6rem;
 	width: 80rem;
 }
 		
