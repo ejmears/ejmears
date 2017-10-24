@@ -458,12 +458,17 @@ h1 {
 
 .splash {
 	width: 80rem;
+	height: 24.67rem;
 }
 
 .splashholder .caption {
 	width: 80rem;
 	margin-left: -40rem;
 	left: 50%;
+}
+
+.splashholder {
+	height: 24.67rem;
 }
 		
 #footer {
