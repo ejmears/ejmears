@@ -82,9 +82,9 @@ input {
 }
 
 input:focus {
-		-moz-box-shadow: 0 0 .1rem .05rem #e7f4fb; 
-		-webkit-box-shadow: 0 0 .1rem .05rem #e7f4fb; 
-		box-shadow: 0 0 .1rem .05rem #e7f4fb;
+		-moz-box-shadow: 0 0 .1rem .05rem #64a5d9; 
+		-webkit-box-shadow: 0 0 .1rem .05rem #64a5d9; 
+		box-shadow: 0 0 .1rem .05rem #64a5d9;
 }
 
 #question {
@@ -98,9 +98,9 @@ input:focus {
 }
 
 textarea:focus {
-		-moz-box-shadow: 0 0 .1rem .05rem #e7f4fb; 
-		-webkit-box-shadow: 0 0 .1rem .05rem #e7f4fb; 
-		box-shadow: 0 0 .1rem .05rem #e7f4fb;
+		-moz-box-shadow: 0 0 .1rem .05rem #64a5d9; 
+		-webkit-box-shadow: 0 0 .1rem .05rem #64a5d9; 
+		box-shadow: 0 0 .1rem .05rem #64a5d9;
 }
 
 textarea {
@@ -235,21 +235,19 @@ textarea {
 }
 
 .socialimg:hover {
-    	-webkit-filter: invert(100%);
-    	filter: invert(100%);
-		background: #1c0b00;
-		-moz-box-shadow: 0 0 .5rem .1rem #1c0b00; 
-		-webkit-box-shadow: 0 0 .5rem .1rem #1c0b00; 
-		box-shadow: 0 0 .5rem .1rem #1c0b00;
+		background: #64a5d9;
+		-moz-box-shadow: 0 0 .5rem .1rem #64a5d9; 
+		-webkit-box-shadow: 0 0 .5rem .1rem #64a5d9; 
+		box-shadow: 0 0 .5rem .1rem #64a5d9;
 		border-radius: .5rem;
 		cursor: default;
 }
 
 .socialimg:onclick {
-		background: #e3f4ff;
-		-moz-box-shadow: 0 0 .5rem .1rem #e3f4ff; 
-		-webkit-box-shadow: 0 0 .5rem .1rem #e3f4ff; 
-		box-shadow: 0 0 .5rem .1rem #e3f4ff;
+		background: #64a5d9;
+		-moz-box-shadow: 0 0 .5rem .1rem #64a5d9; 
+		-webkit-box-shadow: 0 0 .5rem .1rem #64a5d9; 
+		box-shadow: 0 0 .5rem .1rem #64a5d9;
 		cursor: default;
 		border-radius: .5rem;
 }
@@ -273,16 +271,16 @@ textarea {
 }
 
 .folioimg:hover {
-		-moz-box-shadow: 0 0 .5rem .1rem #e7f4fb; 
-		-webkit-box-shadow: 0 0 .5rem .1rem #e7f4fb; 
-		box-shadow: 0 0 .5rem .1rem #e7f4fb;
+		-moz-box-shadow: 0 0 .5rem .1rem #64a5d9; 
+		-webkit-box-shadow: 0 0 .5rem .1rem #64a5d9; 
+		box-shadow: 0 0 .5rem .1rem #64a5d9;
 		cursor: default;
 }
 
 .caption:hover + .folioimg {
-		-moz-box-shadow: 0 0 .5rem .1rem #e7f4fb; 
-		-webkit-box-shadow: 0 0 .5rem .1rem #e7f4fb; 
-		box-shadow: 0 0 .5rem .1rem #e7f4fb;
+		-moz-box-shadow: 0 0 .5rem .1rem #64a5d9; 
+		-webkit-box-shadow: 0 0 .5rem .1rem #64a5d9; 
+		box-shadow: 0 0 .5rem .1rem #64a5d9;
 		cursor: default;
 }
 
@@ -445,7 +443,7 @@ textarea {
 
 .rightlogo {
 	font-weight: bold;
-	color: #64a5d9
+	color: #64a5d9;
 }
 
 #aboutpic {
