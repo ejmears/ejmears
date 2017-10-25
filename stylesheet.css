@@ -235,14 +235,18 @@ textarea {
 }
 
 .socialimg:hover {
-		-moz-box-shadow: 0 0 .5rem .1rem #e3f4ff; 
-		-webkit-box-shadow: 0 0 .5rem .1rem #e3f4ff; 
-		box-shadow: 0 0 .5rem .1rem #e3f4ff;
+    	-webkit-filter: invert(100%);
+    	filter: invert(100%);
+		background: #1c0b00;
+		-moz-box-shadow: 0 0 .5rem .1rem #1c0b00; 
+		-webkit-box-shadow: 0 0 .5rem .1rem #1c0b00; 
+		box-shadow: 0 0 .5rem .1rem #1c0b00;
 		border-radius: .5rem;
 		cursor: default;
 }
 
 .socialimg:onclick {
+		background: #e3f4ff;
 		-moz-box-shadow: 0 0 .5rem .1rem #e3f4ff; 
 		-webkit-box-shadow: 0 0 .5rem .1rem #e3f4ff; 
 		box-shadow: 0 0 .5rem .1rem #e3f4ff;
