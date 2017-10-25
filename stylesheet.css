@@ -151,7 +151,7 @@ textarea {
 }
 			
 #wrapper {
-	background-color: #1c3664;
+	background-color: #282828;
 	width: 100%;
 	position: relative;
 	margin-left: 0;
@@ -190,7 +190,7 @@ textarea {
 	width: 100%;
 	float: left;
 	background-color: #282828;
-	border-bottom: .25rem solid #1c3664;
+	border-bottom: .25rem solid #fff;
 	text-align: center;
 	display: inline-block;
 	position: fixed;
@@ -283,11 +283,12 @@ textarea {
 }
 
 .boxtext {
-	width: 60rem;
-	margin-left: 0;
-	margin-right: 0;
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
 	display: inline-block;
 }
+
 
 .splash {
 	margin: 0 auto;
@@ -375,7 +376,7 @@ textarea {
 }
 
 .box2 {
-	background-color: #282828;
+	background-color: #1c3664;
 	color: #FFF;
 	float: right;
 	padding: 2rem 1rem 2rem 1rem;
@@ -386,23 +387,23 @@ textarea {
 	bottom: 0;
 	display: inline-block;
 	position: absolute;
-	border-right: .25rem solid #1c3664;
-	border-bottom: .25rem solid #1c3664;	 
+	border-right: .25rem solid #fff;
+	border-bottom: .25rem solid #fff;	 
 }
 		
 .box1 {
-	background-color: #282828;
+	background-color: #1c3664;
 	color: #FFF;
 	float: right;
 	padding: 2rem 0 2rem 0;
-	margin: 4rem 0rem 1rem 0;
+	margin: 4rem 0 1rem 0;
 	display: inline;
 	text-align: center;
-	width: 75%; 
+	width: 72.55%; 
 	top: 0;
 	right: 0;
 	bottom: 0;
-	border-bottom: .25rem solid #1c3664;	
+	border-bottom: .25rem solid #fff;	
 }
 
 .button {
@@ -470,7 +471,7 @@ h1 {
 }
 
 #nav {
-	border-bottom: .5rem solid #1c3664;	
+	border-bottom: .5rem solid #fff;	
 }
 
 .box1 {
@@ -525,6 +526,7 @@ h1 {
 	width: auto;
 	padding-left: 3rem;
 	padding-right: 3rem;
+	margin: 0 auto;
 }
 input {
 	font-size: 2rem;
