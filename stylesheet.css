@@ -247,6 +247,7 @@ textarea {
 		-webkit-box-shadow: 0 0 .5rem .1rem #64a5d9; 
 		box-shadow: 0 0 .5rem .1rem #64a5d9;
 		border-radius: .5rem;
+		cursor: pointer;
 }
 
 .socialimg:onclick {
@@ -254,7 +255,7 @@ textarea {
 		-moz-box-shadow: 0 0 .5rem .1rem #64a5d9; 
 		-webkit-box-shadow: 0 0 .5rem .1rem #64a5d9; 
 		box-shadow: 0 0 .5rem .1rem #64a5d9;
-		cursor: default;
+		cursor: pointer;
 		border-radius: .5rem;
 }
 
@@ -280,12 +281,14 @@ textarea {
 		-moz-box-shadow: 0 0 .5rem .1rem #64a5d9; 
 		-webkit-box-shadow: 0 0 .5rem .1rem #64a5d9; 
 		box-shadow: 0 0 .5rem .1rem #64a5d9;
+		cursor: pointer;
 }
 
 .caption:hover + .folioimg {
 		-moz-box-shadow: 0 0 .5rem .1rem #64a5d9; 
 		-webkit-box-shadow: 0 0 .5rem .1rem #64a5d9; 
 		box-shadow: 0 0 .5rem .1rem #64a5d9;
+		cursor: pointer;
 }
 
 .boxtext {
