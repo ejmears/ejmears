@@ -331,12 +331,13 @@ textarea {
 	width: 100%;
 	background: rgba(0, 0, 0, 0.5);
 	bottom: .3rem;
+	cursor: pointer;
 }
 
 .imgholder a:link {
 	text-decoration: none;
 	color: #fff;
-	cursor: default;
+	cursor: pointer;
 	text-shadow:
 	-1px -1px 0 #000,
 	1px -1px 0 #000,
@@ -347,7 +348,7 @@ textarea {
 .imgholder a:visited {
 	text-decoration: none;
 	color: #fff;
-	cursor: default;
+	cursor: pointer;
 	text-shadow:
 	-1px -1px 0 #000,
 	1px -1px 0 #000,
@@ -358,6 +359,7 @@ textarea {
 .imgholder a:hover {
 	text-decoration: none;
 	color: #fff;
+	cursor: pointer;
 	text-shadow:
 	-1px -1px 0 #000,
 	1px -1px 0 #000,
@@ -368,7 +370,7 @@ textarea {
 .imgholder a:active {
 	text-decoration: none;
 	color: #fff;
-	cursor: default;
+	cursor: pointer;
 	text-shadow:
 	-1px -1px 0 #000,
 	1px -1px 0 #000,
