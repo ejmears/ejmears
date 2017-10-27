@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto|Cutive+Mono');
 
 html {
 	height: 100%;
@@ -223,6 +223,13 @@ textarea {
 
 #nav li.active:hover {
 	background-color: #c10000;
+}
+
+.hours {
+	font-family: "Cutive Mono", "Courier New", serif;
+	font-size: 1rem;
+	float: right;
+	padding-right: 5rem;
 }
 
 .socialimg {
@@ -567,6 +574,10 @@ textarea {
 
 .box2 {
 	display: none;
+}
+
+.hours {
+	font-size: 2rem;
 }
 
 .showwhensmall {

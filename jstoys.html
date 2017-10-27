@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>Elijah J. Mears</title>
-	<script type="text/javascript" src="eightball.js"></script>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css"> 
 </head>
 <body>
@@ -27,21 +26,44 @@
 <p class="footer">Copyright &copy; 2017 Elijah J. Mears</p>
 </div>
 
-<div class="box1"><div class="boxtext"><h1>MAGIC 8-BALL</h1>
-<p><img src="img/8-ball.png" alt="A Magic Eight Ball" /></p>
-		<p>Welcome to the Magic 8-Ball. Ask a yes or no question and press the button to receive its infinite wisdom.</p>
-		<p><input type="text" id="question" placeholder="Your question">
-		<input type="button" class="button" onClick="answer(); clearBox(); return false;" value="Get Answer" style="width: 8em;">
-		<br/>
-		<br/>
-		<input type="text" class="answer" id="answer" size="50" disabled/></p>
-		<div class="showwhensmall"><p style="padding-top: 2rem;"><a href="https://www.facebook.com/elijahjmears" target="_blank"><img src="img/facebookicon.png"  class="socialimg"/></a>
+<div class="box1">
+<div class="boxtext">
+<h1>JAVASCRIPT TOYS</h1>
+
+<p>These are little toys, doodads, and utilities I come up with while learning different Javascript skills and which are here for you to play around with.</p>
+
+	<div class="imgholder">
+
+		<a class="boardlink" href="eightball.html"><div class="caption">8-BALL</div><img class="folioimg" src="img/8ballimg.png"/></a>
+		
+	</div><div class="imgholder">
+
+		<a class="boardlink" href="sundial.html"><div class="caption">SUNDIAL</div><img class="folioimg" src="img/sundialimg.png"/></a>
+		
+	</div>
+	</div>
+<div class="showwhensmall"><p style="padding-top: 2rem;"><a href="https://www.facebook.com/elijahjmears" target="_blank"><img src="img/facebookicon.png"  class="socialimg"/></a>
 <a href="https://twitter.com/ElijahJMears" target="_blank"><img src="img/twittericon.png"  class="socialimg"/></a>
 <a href="https://instagram.com/elijahjmears" target="_blank"><img src="img/instagramicon.png"  class="socialimg"/></a></p></div>
 </div>
 </div>
 
+<script>
+var myIndex = 0;
+carousel();
 
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("splash");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 6000); // Change image every 6 seconds
+}
+</script>
 </div>
 
 <div id="footer" class="showwhensmall">Copyright &copy; 2017 Elijah J. Mears</div>
