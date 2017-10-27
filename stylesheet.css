@@ -280,14 +280,12 @@ textarea {
 		-moz-box-shadow: 0 0 .5rem .1rem #64a5d9; 
 		-webkit-box-shadow: 0 0 .5rem .1rem #64a5d9; 
 		box-shadow: 0 0 .5rem .1rem #64a5d9;
-		cursor: default;
 }
 
 .caption:hover + .folioimg {
 		-moz-box-shadow: 0 0 .5rem .1rem #64a5d9; 
 		-webkit-box-shadow: 0 0 .5rem .1rem #64a5d9; 
 		box-shadow: 0 0 .5rem .1rem #64a5d9;
-		cursor: default;
 }
 
 .boxtext {
@@ -357,7 +355,6 @@ textarea {
 .imgholder a:hover {
 	text-decoration: none;
 	color: #fff;
-	cursor: default;
 	text-shadow:
 	-1px -1px 0 #000,
 	1px -1px 0 #000,
