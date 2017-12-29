@@ -381,7 +381,67 @@ textarea {
 }
 
 .imgholder {
-	width: 25%;
+	width: 33.33%;
+	margin: 0;
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+.jsholder .caption {
+	position: absolute;
+	text-align: center;
+	bottom: .4rem;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.jsholder a:link {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	text-shadow:
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+}
+
+.jsholder a:visited {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	text-shadow:
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+}
+
+.jsholder a:hover {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	text-shadow:
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+}
+
+.jsholder a:active {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	text-shadow:
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+}
+
+.jsholder {
+	width: 50%;
 	margin: 0;
 	display: inline-block;
 	float: left;
@@ -529,13 +589,23 @@ h1 {
 }
 
 .imgholder {
-	width: 50%;
+	width: 33.33%;
 	margin: 0;
 }
 
 .imgholder .caption {
 		font-size: 2.5rem;
 		}
+		
+.jsholder {
+	width: 50%;
+	margin: 0;
+}
+
+.jsholder .caption {
+		font-size: 2.5rem;
+		}
+		
 .boxtext {
 	width: auto;
 	padding-left: 3rem;
