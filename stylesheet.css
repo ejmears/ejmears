@@ -90,6 +90,10 @@ a:active {
 	text-decoration: none;
 }
 
+#footwrapper {
+	background-color: #8eb1c7;
+}
+
 #sociallinks {
 	clear: both;
 	display: block;
