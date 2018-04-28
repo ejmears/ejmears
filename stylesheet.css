@@ -51,7 +51,7 @@ main {
 	grid-template-rows: auto auto;
 	justify-content: space-evenly;
 	align-content: center;
-	background-color: #e8e9f3;
+	background-color: #fff;
 }
 
 .splash {
@@ -65,7 +65,8 @@ main {
 
 .body {
 	font-family: "Lato", sans-serif;
-	padding: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
     text-align: justify;
     text-justify: inter-word;
 	overflow: hidden;
