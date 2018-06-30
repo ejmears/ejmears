@@ -45,6 +45,19 @@ main {
 	align-content: center;
 }
 
+footer {
+	grid-colum-start: 1;
+	grid-column-end: span 2;
+	grid-row-start: 5;
+	grid-row-end: span 1;
+	border-radius: 25px;
+	background-color: #282828;
+	border: .3rem solid #1282a2;
+	font-family: "Roboto Slab", "Courier New", serif;
+	text-align: center;
+	color: #fff;
+}
+
 .topbox {
 	width: 100%;
 	height: width;
@@ -81,19 +94,6 @@ main {
 	border-radius: 25px;
 	background-color: #fff;
 	border: .3rem solid #1282a2;
-}
-
-footer {
-	grid-colum-start: 1;
-	grid-column-end: span 2;
-	grid-row-start: 5;
-	grid-row-end: span 1;
-	border-radius: 25px;
-	background-color: #282828;
-	border: .3rem solid #1282a2;
-	font-family: "Roboto Slab", "Courier New", serif;
-	text-align: center;
-	color: #fff;
 }
 
 .leftside {
