@@ -16,7 +16,6 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
 	color: #282828;
 	background-color: #8eb1c7;
 }
@@ -38,10 +37,9 @@ h2 {
 	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	font-variant: small-caps;
-	color: #1282a2;
 	font-size: 6rem;
 	text-align: center;
-	padding: 0;
+	padding: .2rem;
 	margin: 0;
 }
 
@@ -50,21 +48,29 @@ nav {
 	font-size: 4rem;
 }
 
-main {
+#main {
+	display: -ms-grid;
 	display: grid;
 	grid-gap: 1rem;
 	padding: 1rem;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 20% 20% 20% 20% 20% 20% 20%;
+	-ms-grid-columns: 1fr 1rem 1fr;
+	grid-template-columns: repeat(2, 1fr);
+	-ms-grid-rows: (1.5fr 1.5fr 1rem)[3] 1.25fr;
+	-webkit-box-pack: space-evenly;
+	-ms-flex-pack: space-evenly;
+	grid-template-rows: repeat(7, 20%);
 	justify-content: space-evenly;
+	-ms-flex-line-pack: center;
 	align-content: center;
 }
 
 footer {
-	grid-column-start: 1;
-	grid-column-end: span 2;
-	grid-row-start: 7;
-	grid-row-end: span 1;
+	-ms-grid-column: 1;
+	    grid-column: 1 / span 2;
+	-ms-grid-column-span: 3;
+	-ms-grid-row: 10;
+	    grid-row: 7 / span 1;
+	-ms-grid-row-span: 1;
 	width: 100%;
 	background-color: #282828;
 	font-family: "Roboto Slab", "Courier New", serif;
@@ -72,30 +78,46 @@ footer {
 	color: #fff;
 }
 
-#involved {
+#maps {
 	height: 100%;
 	width: 100%;
 	text-align: justify;
     text-justify: inter-word;
 	overflow: hidden;
-	grid-column-start: 1;
-	grid-column-end: span 1;
-	grid-row-start: 5;
-	grid-row-end: span 2;
-	background-color: #fbfbfb;
+	-ms-grid-column: 1;
+	    grid-column: 1 / span 1;
+	-ms-grid-column-span: 1;
+	-ms-grid-row: 7;
+	-ms-grid-row-span: 2;
+	    grid-row: 5 / span 2;
+	color: #1c3664;
+	background: #c3b0cc url("img/NewDistricts2PVITrans.png");
+	background-size: cover;
+	background-position: center center;
 	font-size: 2.5rem;
+	display: block;
+	position: relative;
+}
+
+#maps:hover {
+	color: #1c3664;
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 1rem .1rem #fbfbfb;
+	box-shadow: 0px 0px 1rem .1rem #fbfbfb;
 }
 
 #rightbox {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	object-fit: cover;
-	grid-column-start: 2;
-	grid-column-end: span 1;
-	grid-row-start: 5;
-	grid-row-end: span 2;
-	
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-ms-grid-column: 3;
+	    grid-column: 2 / span 1;
+	-ms-grid-column-span: 1;
+	-ms-grid-row: 7;
+	    grid-row: 5 / span 2;
+	-ms-grid-row-span: 2;
 }
 
 .box {
@@ -107,22 +129,28 @@ footer {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	object-fit: cover;
-	grid-column-start: 1;
-	grid-column-end: span 1;
-	grid-row-start: 1;
-	grid-row-end: span 2;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-ms-grid-column: 1;
+	    grid-column: 1 / span 1;
+	-ms-grid-column-span: 1;
+	-ms-grid-row: 1;
+	    grid-row: 1 / span 2;
+	-ms-grid-row-span: 2;
 }
 
 #bottombox {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	object-fit: cover;
-	grid-column-start: 1;
-	grid-column-end: span 1;
-	grid-row-start: 3;
-	grid-row-end: span 2;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-ms-grid-column: 1;
+	    grid-column: 1 / span 1;
+	-ms-grid-column-span: 1;
+	-ms-grid-row: 4;
+	    grid-row: 3 / span 2;
+	-ms-grid-row-span: 2;
 }
 
 #body {
@@ -131,10 +159,12 @@ footer {
     text-align: justify;
     text-justify: inter-word;
 	overflow: hidden;
-	grid-column-start: 2;
-	grid-column-end: span 1;
-	grid-row-start: 1;
-	grid-row-end: span 4;
+	-ms-grid-column: 3;
+	    grid-column: 2 / span 1;
+	-ms-grid-column-span: 1;
+	-ms-grid-row: 1;
+	    grid-row: 1 / span 4;
+	-ms-grid-row-span: 5;
 	background-color: #fbfbfb;
 }
 
@@ -181,6 +211,13 @@ a:active {
 	padding-right: 1rem;
 }
 
+.padded2 {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	position: absolute;
+	bottom: .25rem;
+}
+
 @media only screen and (orientation: landscape) {
 
 body {
@@ -199,8 +236,9 @@ nav {
 	font-size: 2rem;
 }
 
-main {
-	grid-template-columns: 25% 25% 25% 25%;
+#main {
+	-ms-grid-columns: (1fr)[2] 1rem (1fr)[2];
+	    grid-template-columns: repeat(4, 1fr);
 	width: 100%;
 }
 
@@ -210,32 +248,39 @@ main {
 
 #topbox {
 	display: inline;
-	grid-column-start: 2;
+	-ms-grid-column: 2;
+	    grid-column: 2 / span 1;
 }
 
 #bottombox {
 	display: inline;
-	grid-column-start: 2;
+	-ms-grid-column: 2;
+	    grid-column: 2 / span 1;
 }
 
 #body {
-	grid-column-start: 3;
+	-ms-grid-column: 4;
+	    grid-column: 3 / span 1;
 }
 
 footer {
 	display: inline;
-	grid-column-start: 2;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 3;
+	    grid-column: 2 / span 2;
 }
 
-#involved {
-	display: inline;
-	grid-column-start: 2;
+#maps {
+	display: block;
+	-ms-grid-column: 2;
+	    grid-column: 2 / span 1;
 	font-size: 1.25rem;
 }
 
 #rightbox {
 	display: inline;
-	grid-column-start: 3;
+	-ms-grid-column: 4;
+	    grid-column: 3 / span 1;
 }
 
 .footerimg {
