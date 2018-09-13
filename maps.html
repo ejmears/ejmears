@@ -14,9 +14,14 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css"> 
 </head>
 <body>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 <section id="main">
-	<img src="img/HousePrediction.png" class="box" id="topbox" title="NC House Prediction Map" alt="NC House Prediction Map"/>
-	<img src="img/SenatePrediction.png" class="box" id="bottombox" title="US Senate Prediction Map" alt="US Senate Prediction Map"/>
+	<img src="img/HousePrediction.png" class="box" onclick="showMapModal(this)" id="topbox" title="NC House Prediction Map" alt="NC House Prediction Map" caption="Predictions for the United States Congressional elections in North Carolina, current as of September 6th. Assessments of each race take into account partisan lean, polls, fundraising, and knowledge of the candidates involved."/>
+	<img src="img/SenatePrediction.png" class="box" onclick="showMapModal(this)" id="bottombox" title="US Senate Prediction Map" alt="US Senate Prediction Map" caption="Predictions for the United States Senate races, current as of September 7th. I've combined polling data, partisan history, and fundraising information with gut feelings and a natural sense of optimism to achieve this map. In toss-up races such as Indiana or Florida, I have tried to rely on the latest polls which were out at the time of the map's creation along with the conventional wisdom that in a wave year, toss-ups often break the same way."/>
 	<div class="box" id="body">
 		<h1>
 			<span style="color: #282828; font-weight: 300;">elijah</span><span style="color: #1282a2; font-weight: 700;">mears</span>
@@ -29,10 +34,10 @@
 		</h2>
 		<p class="padded">#LavenderMaps is a personal project which originated on Twitter but has its home here, on my webpage. Looked at one way, the project is just a collection of politically-themed maps I draw: electoral predictions, redistricting proposals, and even an odd bit of political humor. In that sense, this is no different than any other political maps page on the web.</p>
 		<p class="padded">What sets Lavender Maps apart is its true purpose, which is to demonstrate what political cartography could be with a better sense of aesthetics. Let's face it: most political maps are ugly, a hodgepodge of reds and blues, offensive to the eye, that can be difficult or impossible to read. My goal is to come at these maps as a graphic designer and set an expectation for ways of representing data that also look good. And anyway, isn't life better with a little lavender?</p>
-		<p class="padded">For a closer look at any of my maps, feel free to right click (or long press on your phone) and save them to zoom in at a higher resolution.</p>
+		<p class="padded">Click on any of the maps to see them in more detail along with supplemental information.</p>
 	</div>
-		<img src="img/FairDistricts.png" class="box" id="leftbox2" title="Fairer NC House Districts Map" alt="What's one way our congressional districts could have been drawn more fairly?">
-		<img src="img/NamedDistricts.png" class="box" id="rightbox" title="Named Districts Map" alt="What if our congressional districts were named instead of numbered?"/>
+		<img src="img/FairDistricts.png" class="box" onclick="showMapModal(this)" id="leftbox2" title="Fairer NC House Districts Map" alt="What's one way our congressional districts could have been drawn more fairly?" caption="This map explores one way that North Carolina's badly gerrymandered US Congressional map could have been drawn differently. As explained in the text, three primary criteria have been used in addition to the standard criteria of compactness, equal representation, and contiguity: namely, commonality of interests, reflection of the state's overall partisan lean, and flexibility as to the size and placement of communities. While the map is a work-in-progress and does not achieve all of these aims perfectly, it certainly does so better than any map the state has seen in decades.<br/>Partisan lean is reflected by the shading of the districts."/>
+		<img src="img/NamedDistricts.png" class="box" onclick="showMapModal(this)" id="rightbox" title="Named Districts Map" alt="What if our congressional districts were named instead of numbered?" caption="A humorous look at how badly gerrymandered North Carolina is, this map stems from a thread on election Twitter asking what it might be like if the US named its districts in the manner of Canada or England. I took the opportunity to come up with some creative names for our districts intended to provoke thought and provide a laugh."/>
 <footer class="box" id="sociallinks">
 		<p><a href="https://www.facebook.com/elijahjmears" target="_blank"><img src="img/facebook.svg" class="footerimg" title="Facebook" alt="Facebook Icon" /></a>&emsp;<a href="https://twitter.com/ElijahJMears" target="_blank"><img src="img/twitter.svg" class="footerimg" title="Twitter" alt="Twitter Icon" /></a>&emsp;<a href="https://www.instagram.com/ElijahJMears/" target="_blank"><img src="img/instagram.svg" class="footerimg" title="Instagram" alt="Instagram Icon" /></a>&emsp;<script type="text/javascript" language="javascript">
 <!--
@@ -58,6 +63,24 @@ document.write("<a href='mailto:"+link+"'><img src='img/mail.svg' class='footeri
 }
 //-->
 </script><noscript>&nbsp;</noscript></p>
+<script>
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+function showMapModal(img){
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.getAttribute("caption");
+	document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+modal.onclick = function(){
+  modal.style.display = "none";	
+}</script>
 <p>Copyright &copy; 2018 Elijah J. Mears</p>
 	</footer>
 </section>

@@ -2,7 +2,7 @@
 
 html {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
@@ -13,10 +13,11 @@ body {
 	font-size: 2rem;
 	font-family: "Lato", sans-serif;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     margin: 0px;
     padding: 0px;
 	color: #282828;
+	position: relative;
 	background-color: #8eb1c7;
 }
 
@@ -113,9 +114,8 @@ footer {
 }
 
 #leftbox:hover {
-	color: #64a5d9;
-	-webkit-box-shadow: 0px 0px 1rem .1rem #fbfbfb;
-	box-shadow: 0px 0px 1rem .1rem #fbfbfb;
+    -webkit-filter: brightness(112%);
+    filter: brightness(112%);
 }
 
 #rightbox {
@@ -230,6 +230,75 @@ a:active {
 	bottom: 1rem;
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 12%; /* Location of the box */
+    left: 0;
+    top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+    width: 100%; /* Full width */
+	height: 93%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	background-attachment: fixed;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+	font-size: 3rem;
+	padding: 2rem 1rem 2rem 1rem;
+	margin: 0 auto;
+    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
+	-moz-text-align-last: center;
+    text-align-last: center;
+    color: #fbfbfb;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    color: #fbfbfb;
+    font-size: 8rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 @media only screen and (orientation: landscape) {
 
 body {
@@ -305,6 +374,21 @@ footer {
 	width: 10%;
 	padding-left: 1.25%;
 	padding-right: 1.25%;
+}
+
+.modal {
+	padding-top: 0;
+	height: 100%;
+}
+
+.modal-content {
+	width: 80%;
+	max-width: 1000px;
+}
+
+#caption {
+	font-size: 1.25rem;
+	max-width: 1000px;
 }
 
 }
