@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto:300,700|Roboto+Slab:300');
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto:300,700|Roboto+Slab:300|Great+Vibes');
 
 html {
     width: 100%;
@@ -34,12 +34,12 @@ h1 {
 }
 
 h2 {
-	font-family: "Roboto", sans-serif;
+	font-family: "Great Vibes", cursive;
 	font-weight: 700;
-	font-variant: small-caps;
-	font-size: 6rem;
+	font-size: 7rem;
 	text-align: center;
-	padding: .2rem;
+	line-height: .8;
+	padding-top: 4rem;
 	margin: 0;
 }
 
@@ -55,7 +55,7 @@ nav {
 	padding: 1rem;
 	-ms-grid-columns: 1fr 1rem 1fr;
 	grid-template-columns: repeat(2, 1fr);
-	-ms-grid-rows: (1.5fr 1.5fr 1rem)[3] 1.25fr;
+	-ms-grid-rows: (1.4fr 1.4fr 1rem)[3] 1.25fr;
 	-webkit-box-pack: space-evenly;
 	-ms-flex-pack: space-evenly;
 	grid-template-rows: repeat(7, 20%);
@@ -78,7 +78,7 @@ footer {
 	color: #fff;
 }
 
-#maps {
+#leftbox {
 	height: 100%;
 	width: 100%;
 	text-align: justify;
@@ -94,14 +94,26 @@ footer {
 	background: #c3b0cc url("img/NewDistricts2PVITrans.png");
 	background-size: cover;
 	background-position: center center;
-	font-size: 2.5rem;
 	display: block;
 	position: relative;
 }
 
-#maps:hover {
-	color: #1c3664;
-	text-decoration: none;
+#leftbox2 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-ms-grid-column: 1;
+	    grid-column: 1 / span 1;
+	-ms-grid-column-span: 1;
+	-ms-grid-row: 7;
+	    grid-row: 5 / span 2;
+	-ms-grid-row-span: 2;
+}
+
+#leftbox:hover {
+	color: #64a5d9;
 	-webkit-box-shadow: 0px 0px 1rem .1rem #fbfbfb;
 	box-shadow: 0px 0px 1rem .1rem #fbfbfb;
 }
@@ -170,12 +182,12 @@ footer {
 
 a:link {
 	color: #1c3664;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a:visited {
 	color: #1c3664;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a:hover {
@@ -185,7 +197,7 @@ a:hover {
 
 a:active {
 	color: #64a5d9;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 #sociallinks {
@@ -215,7 +227,7 @@ a:active {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	position: absolute;
-	bottom: .25rem;
+	bottom: 1rem;
 }
 
 @media only screen and (orientation: landscape) {
@@ -229,7 +241,8 @@ h1 {
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 3.5rem;
+	padding-top: 2rem;
 }
 
 nav {
@@ -270,11 +283,16 @@ footer {
 	    grid-column: 2 / span 2;
 }
 
-#maps {
+#leftbox {
 	display: block;
 	-ms-grid-column: 2;
 	    grid-column: 2 / span 1;
-	font-size: 1.25rem;
+}
+
+#leftbox2 {
+	display: inline;
+	-ms-grid-column: 2;
+	    grid-column: 2 / span 1;
 }
 
 #rightbox {
