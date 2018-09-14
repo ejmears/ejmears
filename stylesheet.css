@@ -8,37 +8,41 @@
 html {
 	width: 100%;
 	min-height: 100%;
+	font-size: 1.1vw;
 }
 
 body {
 	width: 100%;
-	height: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	color: #ffffff;
+	text-align: center;
 	font-family: "Gaegu", "Comic Sans", sans-serif;
 	background: #000000 url("bg.jpeg") center/100% 100% no-repeat;
 }
 
 h1 {
-	text-align: center;
-	font-size: 32pt;
+	font-size: 7.5rem;
 	margin-top: 1rem;
+	text-shadow: 0 1px 0 rgb(204,204,204) , 0 2px 0 rgb(201,201,201) , 0 3px 0 rgb(187,187,187) , 0 4px 0 rgb(185,185,185) , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 10px 10px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.14902) ;	
+	-o-text-overflow: clip;
+	text-overflow: clip;
+}
+
+h2 {
+	font-size: 4rem;
 	text-shadow: .125rem .125rem #000000;
 }
 
 #legend {
-	position: absolute;
-	display: inline-block;
-	bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+	max-width: 75%;
 	background-color: rgba(100, 0, 0, 0.5);
 	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1rem;
+	margin: auto auto 2rem auto;
 	padding: .5rem;
 	border: .25rem solid #fff;
-	font-size: 8pt;
+	font-size: 2.5rem;
 	text-align: center;
 	text-shadow: .125rem .125rem #000000;
 	box-shadow: .175rem .175rem #000000;
@@ -46,12 +50,14 @@ h1 {
 
 @media only screen and (orientation: landscape) {
 
-h1 {
-	font-size: 64pt;
+h2 {
+	margin-top: 10rem;
 }
 
 #legend {
-	font-size: 12pt;
+	font-size: 1rem;
+	max-width: 50%;
+	margin: auto auto .5rem auto;
 }
 
 }
