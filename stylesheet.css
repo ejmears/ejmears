@@ -18,21 +18,28 @@ body {
 	background: #000000 url("bg.jpeg") center/100% 100% no-repeat;
 }
 
+h1 {
+	text-align: center;
+	font-size: 64pt;
+	margin-top: 1rem;
+	text-shadow: .125rem .125rem #000000;
+}
+
 #legend {
 	position: absolute;
 	display: inline-block;
 	bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(100, 0, 0, 0.5);
 	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1rem;
-	padding: 1rem;
-	border: .5rem solid #fff;
+	padding: .5rem;
+	border: .25rem solid #fff;
 	font-size: 12pt;
 	text-align: center;
-	text-shadow: .175rem .175rem #000000;
+	text-shadow: .125rem .125rem #000000;
 	box-shadow: .175rem .175rem #000000;
 }
